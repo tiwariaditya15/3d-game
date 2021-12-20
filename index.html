@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Here</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .score {
+        position: fixed;
+        left: 50%;
+        top: 0;
+        display: flex;
+        color: red;
+      }
+      .error {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -40%);
+        font-size: 2rem;
+        background-color: azure;
+        color: gray;
+        padding: 2rem;
+        border-radius: 1rem;
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="score">
+      Score:
+      <p class="collisions"></p>
+    </div>
+    <div class="error">
+      <p>Game ends!! <br />You hit 5 cubes.</p>
+      <button id="restart">Restart</button>
+    </div>
+    <script src="./js//three.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
